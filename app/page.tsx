@@ -3,6 +3,7 @@ import { getUpcomingMovies, getTopRatedMovies, getPopularMovies } from "@/lib/ge
 import HeroCarousel from "@/components/HeroCarousel";
 import GalaxyTiles from "@/components/GalaxyTiles";
 
+
 export default async function Home() {
   const upcomingMovies = await getUpcomingMovies();
   const topRatedMovies = await getTopRatedMovies();

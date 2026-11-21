@@ -1,4 +1,7 @@
 import { Sparkles, Orbit, Shield, Rocket, Telescope } from "lucide-react";
+import Link from "next/link";
+
+
 
 const tiles = [
   { name: "Imagination Galaxy", tagline: "Escape beyond your boundaries", icon: Sparkles, genreId: 16 },
@@ -14,14 +17,14 @@ function GalaxyTiles() {
       {tiles.map((tile) => {
         const Icon = tile.icon;
         return (
-          <div
+          <Link href={`/genre/${tile.genreId}?name=${tile.name}`}
             key={tile.genreId}
             className="aspect-video flex flex-col items-center justify-center text-center p-3 rounded-xl border border-glam-purple bg-[#221a4a] hover:scale-105 hover:border-glam-pink transition duration-200 cursor-pointer"
           >
             <Icon className="w-8 h-8 text-glam-pink mb-2" />
             <h3 className="font-bold text-sm md:text-base">{tile.name}</h3>
             <p className="text-xs text-glam-gold">{tile.tagline}</p>
-          </div>
+          </Link>
         );
       })}
     </section>

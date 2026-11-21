@@ -33,3 +33,10 @@ export async function getTopRatedMovies() {
   const url = new URL("https://api.themoviedb.org/3/movie/top_rated");
   return fetchFromTMDB(url);
 }
+
+export async function getDiscoverMovies(genreId: string) {
+  const url = new URL("https://api.themoviedb.org/3/discover/movie");
+  url.searchParams.set("with_genres", genreId);
+  url.searchParams.set("sort_by", "popularity.desc");
+  return fetchFromTMDB(url);
+}
