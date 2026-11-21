@@ -4,7 +4,7 @@ A space-themed streaming app inspired by Disney+, built with Next.js, TypeScript
 
 **Live site:** https://christiplus.beautifulyouwebstudio.com
 
-![Christi+ homepage](public/screenshots/home.png)
+![Christi+ homepage](public/screenshots/Home.png)
 
 ## Features
 - Auto-sliding hero carousel with the most popular movies
@@ -14,7 +14,7 @@ A space-themed streaming app inspired by Disney+, built with Next.js, TypeScript
 - Keyboard navigation with visible focus rings
 - Deployed on Vercel with a custom domain
 
-![Genre page](public/screenshots/genre.png)
+![Genre page](public/screenshots/Genre.png)
 
 ## Built With
 - Next.js 14 (App Router)
