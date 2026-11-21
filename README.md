@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Christi+ | Galaxy Glam Streaming App
 
-## Getting Started
+A space-themed streaming app inspired by Disney+, built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+**Live site:** https://christiplus.beautifulyouwebstudio.com
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Christi+ homepage](public/screenshots/home.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Auto-sliding hero carousel with the most popular movies
+- Scrollable movie rows with arrow controls
+- "Galaxy" tiles that open dynamic genre pages
+- Live movie data from the TMDB API
+- Keyboard navigation with visible focus rings
+- Deployed on Vercel with a custom domain
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Genre page](public/screenshots/genre.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Built With
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Embla Carousel
+- TMDB API
 
-## Learn More
+## What I Learned
+- Fetching data on the server with async/await
+- Building dynamic routes with `[id]` folders
+- Styling with Tailwind classes and custom theme colors
+- Making a site usable without a mouse
 
-To learn more about Next.js, take a look at the following resources:
+## Coming in v2
+- Search and a genre dropdown
+- User login
+- AI movie suggestions
+- Butterfly intro animation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run It Locally
+1. Clone the repo and run `npm install`
+2. Create a `.env.local` file with `TMDB_API_KEY=your_key_here`
+3. Run `npm run dev` and open http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
+**Christi Hansen Moore** | Beautiful You Web Studio
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*This product uses the TMDB API but is not endorsed or certified by TMDB.*
