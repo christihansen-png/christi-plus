@@ -13,8 +13,12 @@ async function fetchFromTMDB(url: URL) {
     next: { revalidate: 60 * 60 * 24 },
   });
 
+  if (!res.ok) {
+    return [];
+  }
+
   const data = await res.json();
-  return data.results as Movie[];
+  return (data.results ?? []) as Movie[];
 }
 
 export async function getUpcomingMovies() {
@@ -22,12 +26,10 @@ export async function getUpcomingMovies() {
   return fetchFromTMDB(url);
 }
 
-
 export async function getPopularMovies() {
   const url = new URL("https://api.themoviedb.org/3/movie/popular");
   return fetchFromTMDB(url);
 }
-
 
 export async function getTopRatedMovies() {
   const url = new URL("https://api.themoviedb.org/3/movie/top_rated");

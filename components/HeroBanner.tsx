@@ -6,7 +6,7 @@ function HeroBanner({ movie }: { movie: Movie }) {
   return (
     <section className="relative h-[70vh] w-full">
       <Image
-        src={getImagePath(movie.backdrop_path, "original")}
+        src={getImagePath(movie.backdrop_path, "w1280")}
         alt={movie.title}
         fill
         priority
@@ -17,7 +17,7 @@ function HeroBanner({ movie }: { movie: Movie }) {
       <div className="absolute inset-0 bg-gradient-to-r from-glam-space/90 via-transparent to-transparent" />
 
       <div className="absolute bottom-16 left-5 max-w-xl">
-        <h1 className="text-4xl font-bold mb-4">{movie.title}</h1>
+        <h2 className="text-4xl font-bold mb-4">{movie.title}</h2>
         <p className="text-gray-200 line-clamp-3">{movie.overview}</p>
       </div>
     </section>

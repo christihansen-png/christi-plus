@@ -10,7 +10,7 @@ export default async function Home() {
   const popularMovies = await getPopularMovies();
 
   return (
-    <main className="">
+    <main>
       <HeroCarousel movies={popularMovies.slice(0, 5)} />
       <GalaxyTiles />
       <MoviesCarousel title="Launching Soon" movies={upcomingMovies} />
