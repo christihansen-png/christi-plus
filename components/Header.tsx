@@ -4,7 +4,7 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="fixed w-full z-20 top-0 flex items-center justify-between p-5 bg-gradient-to-t from-transparent via-[#140F2E]/50 to-[#140F2E]">
-      <Link href="/" className="mr-10 flex items-center">
+      <Link href="/" className="mr-10 flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-glam-gold focus-visible:ring-offset-4 focus-visible:ring-offset-glam-space">
         <Image
           src="/christi-plus-logo.svg"
           alt="Christi+ logo"
