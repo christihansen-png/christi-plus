@@ -1,6 +1,6 @@
 import MoviesCarousel from "@/components/MoviesCarousel";
 import { getUpcomingMovies, getTopRatedMovies, getPopularMovies } from "@/lib/getMovies";
-import HeroBanner from "@/components/HeroBanner";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default async function Home() {
   const upcomingMovies = await getUpcomingMovies();
@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <main className="">
-      <HeroBanner movie={popularMovies[0]} />
+      <HeroCarousel movies={popularMovies.slice(0, 5)} />
       <MoviesCarousel title="Launching Soon" movies={upcomingMovies} />
       <MoviesCarousel title="Brightest Stars" movies={topRatedMovies} />
       <MoviesCarousel title="Supernova Hits" movies={popularMovies} />
